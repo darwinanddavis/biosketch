@@ -1,0 +1,203 @@
+---
+title: "Matt Malishev"
+author: "<div style=\"color:#2a1a9d;\"> <center> **A biosketch** </center> </div>"
+date: 
+img: "img/mm.png"
+params:
+    width: 1000 
+    height: 700
+# autosize: true
+header-includes: \usepackage{float}
+always_allow_html: yes
+output:
+  revealjs::revealjs_presentation:
+    css: style/styles.css
+    theme: simple #default moon night black sky
+    highlight: pygments
+    incremental: true
+    center: true
+    transition: slide
+    background-transition: slide
+    mathjax: local # null
+    self_contained: false
+    slide_level: 1
+    # reveal_plugins: ["notes", "search", "zoom", "chalkboard"] # ALT + mouseclick to zoom
+    reveal_options:
+      slideNumber: true
+      fig_caption: true
+      # fig_width: 10
+      # fig_height: 10
+      # showNotes: true
+      previewLinks: true
+      minScale: 1.0
+      maxScale: 1.0
+---
+
+```{r, set-options, echo = FALSE, cache = FALSE}
+knitr::opts_chunk$set(
+ eval = T, # run all code
+ echo = F, # show code chunks in output 
+ tidy=T, # make output as tidy
+ message = F,  # mask all messages
+ warning = F, # mask all warnings 
+ out.width="100%",
+ size="small", # set code chunk size, 
+ knitr::opts_chunk$set(fig.pos = 'H')
+)
+# options(width = 2000)
+# get device output size
+# dev.size("px")
+```
+
+<!-- install packages -->
+```{r, load packages, include=T, cache=F, message=F, warning=F, results='hide',echo=F}
+packages <- c("ggplot2","dplyr","tidyverse","zoo","RColorBrewer","viridis","plyr","leaflet","plotly","widgetframe","geosphere","lubridate","ggthemes","gridExtra","crosstalk")  
+if (require(packages)) {
+    install.packages(packages,dependencies = T)
+    require(packages)
+}
+suppressPackageStartupMessages(
+  lapply(packages,library,character.only=T) 
+)
+
+# update packages 
+# update.packages(ask = FALSE, checkBuilt = TRUE)
+
+require(RCurl)
+require(RColorBrewer)
+require(dplyr)
+require(plotly)
+script <- getURL("https://raw.githubusercontent.com/darwinanddavis/plot_it/master/plot_it.R", ssl.verifypeer = FALSE)
+  eval(parse(text = script))
+  # Set global plotting parameters
+  cat("plot_it( \n0 for presentation, 1 for manuscript, \nset colour for background, \nset colour palette 1. use 'display.brewer.all()', \nset colour palette 2. use 'display.brewer.all()', \nset alpha for colour transperancy, \nset font style \n)")
+  plot_it(0,"blue","Set3","Spectral",0.8,"") # set plot function params       
+  plot_it_gg("black","white") # same as above for ggplot 
+
+```
+
+<!-- ____________________________________________________________________________ -->
+<!-- start body -->
+
+<!-- <a href="https://darwinanddavis.github.io/conference_sites/" title="Should work">Work</a> -->
+
+
+<!-- ________________________________________________________ slide break -->
+
+<p class="small">
+Best viewed in Chrome  
+Press `F` for fullscreen   
+Interactive slides   
+</p>
+
+<!-- ________________________________________________________ slide break -->
+
+---    
+
+<img src="img/mm.png",width=350, height=350, align="right">
+
+### Born 
+Melbourne, Australia  
+
+### Education
+PhD, Computational Biology, University of Melbourne    
+BSc (Hons), Monash University  
+
+### Interests  
+Cartography, data viz, writing  
+
+<!-- ________________________________________________________ slide break -->
+# Places I've lived 
+
+<!-- ________________________________________________________ slide break -->
+# {data-background-iframe="https://darwinanddavis.github.io/mybio/map1.html"}
+
+<!-- ________________________________________________________ slide break -->
+
+# Places I've worked    
+
+<!-- ________________________________________________________ slide break -->
+
+---    
+
+<img src="img/cebra.jpg", width=350, height=200, align="left">
+<img src="img/vu.jpeg", height=200 align="center">
+<img src="img/ufz.jpeg", height=200, align="center">
+<br>  
+<img src="img/uom.png", height=200, align="center">
+<img src="img/wv.png", align="center">
+<img src="img/emory.png", height=200, align="center">
+
+<!-- ________________________________________________________ slide break -->
+
+# Why I make a great data storyteller 
+
+<!-- ________________________________________________________ slide break -->
+
+---    
+
+### Data analysis  
+
+I love turning this
+
+```{r,echo=T,eval=T}
+readr::read_csv("data/ds.csv") %>% str
+```
+
+<center> **into this ...** </center>
+
+<!-- ________________________________________________________ slide break -->
+# {data-background="img/dv1.png" data-background-size="99.99% 99.99%" data-background-repeat="repeat"} 
+
+<!-- ________________________________________________________ slide break -->
+# {data-background="img/dv2.png" data-background-size="99.99%" data-background-repeat="repeat"} 
+
+# {data-background-iframe="https://darwinanddavis.github.io/mybio/dv1.html"}
+
+# {data-background-iframe="https://darwinanddavis.github.io/mybio/dv2.html"}
+
+<!-- ________________________________________________________ slide break -->
+
+---
+
+### Communication
+
+<br>
+I've published both technical and non-technical works, including research articles, book chapters, blog posts, policy documents, and annual reports ...  
+
+<!-- ________________________________________________________ slide break -->
+
+
+# {data-background-iframe="https://www.ncbi.nlm.nih.gov/pubmed/27624673"}    
+
+
+# {data-background-iframe="https://theplusones.com/melbourne/2017/03/24/koyaanisqatsi-live-philip-glass-ensemble/"}    
+
+
+---  
+
+and given invited seminars on research and data science ...  
+
+# {data-background-iframe="https://darwinanddavis.github.io/mybio/map2.html"}
+
+<!-- ________________________________________________________ slide break -->
+
+# Some of my data projects      
+
+<!-- ________________________________________________________ slide break -->
+
+# {data-background-iframe="https://darwinanddavis.github.io/EmoRyCodingClub/index.html"}  
+
+
+# {data-background-iframe="https://darwinanddavis.github.io/DataPortfolio/"}
+
+---  
+
+### Thanks for playing!    
+
+<br>
+<img src="img/contact.png", height=200>  
+
+
+<!-- end body -->  
+<!-- ____________________________________________________________________________ -->
