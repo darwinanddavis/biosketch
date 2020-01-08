@@ -110,7 +110,7 @@ Cartography, data viz, writing
 # Places I've lived 
 
 <!-- ________________________________________________________ slide break -->
-# {data-background-iframe="https://darwinanddavis.github.io/mybio/map1.html"}
+# {data-background-iframe="https://darwinanddavis.github.io/biosketch/map1.html"}
 
 <!-- ________________________________________________________ slide break -->
 
@@ -152,9 +152,9 @@ readr::read_csv("data/ds.csv") %>% str
 <!-- ________________________________________________________ slide break -->
 # {data-background="img/dv2.png" data-background-size="99.99%" data-background-repeat="repeat"} 
 
-# {data-background-iframe="https://darwinanddavis.github.io/mybio/dv1.html"}
+# {data-background-iframe="https://darwinanddavis.github.io/biosketch/dv1.html"}
 
-# {data-background-iframe="https://darwinanddavis.github.io/mybio/dv2.html"}
+# {data-background-iframe="https://darwinanddavis.github.io/biosketch/dv2.html"}
 
 <!-- ________________________________________________________ slide break -->
 
@@ -178,7 +178,7 @@ I've published both technical and non-technical works, including research articl
 
 and given invited seminars on research and data science ...  
 
-# {data-background-iframe="https://darwinanddavis.github.io/mybio/map2.html"}
+# {data-background-iframe="https://darwinanddavis.github.io/biosketch/map2.html"}
 
 <!-- ________________________________________________________ slide break -->
 
