@@ -163,7 +163,7 @@ readr::read_csv("data/ds.csv") %>% str
 ### Communication
 
 <br>
-I've published both technical and non-technical works, including research articles, book chapters, blog posts, policy documents, and annual reports ...  
+I love writing and have published both technical and non-technical works, including research articles, book chapters, blog posts, policy documents, and annual reports ...    
 
 <!-- ________________________________________________________ slide break -->
 
@@ -190,6 +190,10 @@ and given invited seminars on research and data science ...
 
 
 # {data-background-iframe="https://darwinanddavis.github.io/DataPortfolio/"}
+
+---
+
+Presented here are a few, diverse examples of my data analyses, modelling, and writing. Further and more indepth examples are listed in my CV and on my website link.   
 
 ---  
 
