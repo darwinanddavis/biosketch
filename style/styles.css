@@ -80,11 +80,6 @@
 }
 </style>*/
 
-.reveal .ttl {
-  color: red;
-}
-
-
 /*.reveal .leaflet-container .leaflet-fade-anim .leaflet-tile, .reveal .leaflet-container .leaflet-fade-anim .leaflet-popup {
     -webkit-transition: opacity 0.2s linear;
     -moz-transition: opacity 0.2s linear;
