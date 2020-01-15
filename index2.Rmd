@@ -141,7 +141,7 @@ My 10 years experience as a freelance copy-editor also helps with this consisten
 
 ---  
 
-## Tell us something you are most proud of in your life {data-background="img/pm.jpg" data-background-position="20% 40%" data-background-size="30%" data-background-repeat="no-repeat"}  
+## Tell us something you are most proud of in your life {data-background="img/pm.jpg" data-background-position="-1% 30%" data-background-size="30%" data-background-repeat="no-repeat"}  
 
 <br>
 
